@@ -38,15 +38,15 @@ let player1mark = ""
 let player2mark = ""
 let computerMark = ""
 
-let one
-let two
-let three
-let four
-let five
-let six
-let seven
-let eight
-let nine
+let one = ""
+let two = ""
+let three = ""
+let four = ""
+let five = ""
+let six = ""
+let seven = ""
+let eight = ""
+let nine = ""
 
 let playerOneScore = 0
 let playerTwoScore = 0
@@ -412,7 +412,7 @@ function determineWinner(){
         player2orCpu = "CPU"
     }
 
-    document.getElementById("who-take-round").textContent = `PLAYER 1: ${playerOneScore}         ${player2orCpu}: ${playerTwoScore}`
+    document.getElementById("who-take-round").textContent = `PLAYER 1: ${playerOneScore}     --    ${player2orCpu}: ${playerTwoScore}`
     
 }
 
