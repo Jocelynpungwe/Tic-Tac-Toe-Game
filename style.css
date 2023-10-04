@@ -54,6 +54,7 @@ color: rgb(252, 195, 41);
 /* button */
 
 .restart-btn{
+border: none;
 padding: 10px;
 background: rgb(182, 207, 216);
 border-radius: 10px;
@@ -69,10 +70,12 @@ transition: 500ms ease-out;
 }
 
 .restart-btn .fa-rotate-right{
+    color: black;
     font-size: 1.4rem;
 }
 
 .btn{
+    color: black;
     width: 100%;
     font-size: .5rem;
     font-weight: 900;
@@ -102,6 +105,7 @@ transition: 500ms ease-out;
     box-shadow: 0 5px 0 rgb(2, 113, 165);
 }
 .btn-final{
+    color: black;
     padding: 10px;
     border-radius: 10px;
     font-weight: 900;
@@ -110,6 +114,7 @@ transition: 500ms ease-out;
 }
 
 .quit-btn{
+ 
  background: gray;
  box-shadow: 0 5px 0 rgb(90, 89, 89);
  margin-bottom: 15px;
@@ -168,7 +173,7 @@ transition: 500ms ease-out;
 
 .game-container{
     display: grid;
-    grid-template-columns: repeat(3,minmax(100px,500px));
+    grid-template-columns: repeat(3,minmax(50px,500px));
     column-gap: 10px;
     row-gap: 20px;
     margin: 40px auto 0;
@@ -178,7 +183,6 @@ transition: 500ms ease-out;
     background: #1c313d;
     border-radius: 10px;
     box-shadow: 0 10px #0b1b24 ;
-    width: 115px;
     height: 80px;
     cursor: pointer;
     text-align: center;
@@ -195,7 +199,6 @@ transition: 500ms ease-out;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- width: 115px;
  padding: 13px;
  border-radius: 10px;
  font-size: .8rem;
@@ -276,9 +279,7 @@ transition: 500ms ease-out;
     font-weight: 800;
 }
 
-.user-selection .user-choice{
-    
+.user-selection .user-choice{    
     background: rgb(178, 182, 185);
     color: #04202b;
-    
 }
