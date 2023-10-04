@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <main class="main-section">
+
+            <section id="user-selection-page" class="container">
+                <div id="user-selector-page" class="user-selector-page">
+                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-o"></i>
+                </div>
+                
+                <div class="user-select-section">
+                    <p>PLAYER 1 PICK YOUR MARK</p>
+                    <div id="user-selection" class="user-selection">
+                        <i id="user-choose-x" class="fa-solid fa-xmark"></i>
+                        <i id="user-choose-y" class="fa-solid fa-o"></i>
+                    </div>
+                    <p>REMEMBER: PLAYER 1 GOES FIRST</p>
+                </div>
+                <button id="new-game-btn-vs-cpu" disabled class="btn primary-btn">NEW GAME (VS CPU)</button>
+                <button id="new-game-btn-vs-user" disabled class="btn secondary-btn">NEW GAME (VS PLAYER)</button>
+            </section>
+    
+            <section id="display-nav" class="display-nav">
+
+                <div class="container nav-section">
+                    <div class="x-and-o-display">
+                        <i class="fa-solid fa-xmark"></i>
+                        <i class="fa-solid fa-o"></i>
+                    </div>
+                    <div class="players-turn" id="players-turn">
+                        
+                    </div>
+                    <button id="restart-btn" class="restart-btn"><i class="fa-solid fa-rotate-right"></i></button>
+                </div>
+
+                <div class="container game-container" id="container">
+                    <div class="box-grid" id="box-1">1</div>
+                    <div class="box-grid" id="box-2">2</div>
+                    <div class="box-grid" id="box-3">3</div>
+                    <div class="box-grid" id="box-4">4</div>
+                    <div class="box-grid" id="box-5">5</div>
+                    <div class="box-grid" id="box-6">6</div>
+                    <div class="box-grid" id="box-7">7</div>
+                    <div class="box-grid" id="box-8">8</div>
+                    <div class="box-grid" id="box-9">9</div>
+                    
+                    <div class="score-box player-one-block">
+                        <p id="player-one-playing">X (Player 1)</p>
+                        <p id="player-one-score">0</p>
+                    </div>
+                    <div class="score-box vs-tile">
+                        <p>Vs</p>
+                    </div>
+                    <div class="score-box player-two-or-cpu">
+                        <p id="player-two-playing">O (Player 2)</p>
+                        <p id="player-two-score">0</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="winner-display" class="container winner-display">
+                <p id="who-wins">Current Score</p>
+                <p id="who-take-round">X TAKES THE ROUND</p>
+                <button id="quit-btn" class="quit-btn btn-final">QUIT</button>
+                <button id="next-level-btn" class="next-level-btn btn-final">NEXT ROUND</button>
+            </section>
+
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin-top: 0;
+}
+
+/* typography */
+
+.x-and-o-display > i{
+    font-size: 3rem;
+}
+
+.players-turn > i{
+    color:  rgb(182, 207, 216);
+    font-size: 1.5rem;
+    margin-bottom: 0;    
+}
+
+.fa-solid{
+    font-size: 5rem;
+}
+
+.fa-xmark{
+color: rgb(0, 174, 255);
+}
+.fa-o{
+color: rgb(252, 195, 41);
+}
+
+.score-box p:nth-last-child(1){
+    font-size: 2rem;
+}
+
+.player-one-block{
+    background: rgb(0, 174, 255);
+}
+
+.vs-tile{
+    background: gray;
+}
+
+.player-two-or-cpu{
+    background: rgb(252, 195, 41);
+}
+
+
+/* button */
+
+.restart-btn{
+padding: 10px;
+background: rgb(182, 207, 216);
+border-radius: 10px;
+box-shadow: 0 4px  rgb(122, 153, 153) ;
+cursor: pointer;
+transition: 500ms ease-out;
+}
+
+.restart-btn:hover,
+.restart-btn:focus{
+    transform:scale(1.1);
+    transition: 500ms ease-in;
+}
+
+.restart-btn .fa-rotate-right{
+    font-size: 1.4rem;
+}
+
+.btn{
+    width: 100%;
+    font-size: .5rem;
+    font-weight: 900;
+    padding: 1.2em 0;
+    border-radius: 10px;
+    border: none;
+    margin-top: 2.5em;
+    transition: 500ms ease-out;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus,
+.btn-final:hover,
+.btn-final:focus{
+    transform: scale(1.2);
+    transition: 500ms ease-in;
+}
+
+.primary-btn{
+   
+    background: rgb(252, 195, 41);
+    box-shadow: 0 5px 0 rgb(202, 158, 35);
+}
+.secondary-btn{
+    background: rgb(0, 174, 255);
+    box-shadow: 0 5px 0 rgb(2, 113, 165);
+}
+.btn-final{
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+}
+
+.quit-btn{
+ background: gray;
+ box-shadow: 0 5px 0 rgb(90, 89, 89);
+ margin-bottom: 15px;
+}
+
+.next-level-btn{
+    background: rgb(202, 158, 35);
+    box-shadow: 0 5px 0 rgb(138, 107, 22)
+ 
+}
+
+
+/* layouts */
+
+.main-section{
+    background: #04202b;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.container{
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.display-nav{
+    display: none;
+}
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.x-and-o-display{
+    display: flex;
+}
+
+.players-turn{
+    display: flex;
+    color:  rgb(182, 207, 216);
+    font-weight: 700;
+    background: #1c313d;
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px #0b1b24 ;
+}
+
+
+.players-turn > p{
+    margin-top: 4px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px,500px));
+    column-gap: 10px;
+    row-gap: 20px;
+    margin: 40px auto 0;
+    
+}
+.box-grid{
+    background: #1c313d;
+    border-radius: 10px;
+    box-shadow: 0 10px #0b1b24 ;
+    width: 115px;
+    height: 80px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+
+.score-box{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 115px;
+ padding: 13px;
+ border-radius: 10px;
+ font-size: .8rem;
+ font-weight: 900;
+}
+
+.score-box p{
+ margin-top: 0;
+ margin-bottom: 0;   
+}
+
+
+.user-selector-page{
+    text-align: center;
+}
+
+.user-selector-page .fa-o,
+.user-selector-page .fa-xmark{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.user-select-section{
+    text-align: center;
+    background: #1c313d;
+    border-radius: 10px;
+    box-shadow: 0 10px #0b1b24 ;
+    padding: 15px 20px;
+}
+
+.user-select-section p{
+    margin: 10px;
+    color: rgb(178, 182, 185);
+}
+
+.user-selection{
+    display: flex;
+    justify-content: space-between;
+    background: #04202b;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+
+.user-selection i{
+    font-size: 2rem;
+    color: rgb(178, 182, 185);
+    width: 50%;
+    padding: .3em .4em;
+}
+
+.user-selection i:hover,
+.user-selection i:focus{
+    background: aliceblue;
+    color: inherit;
+    border-radius: 10px;
+}
+
+.winner-display{
+    display: none;
+    height: 600px;
+    text-align: center;
+    background: #04202b;
+    padding-top: 200px;
+    border: 5px solid black;
+    position: fixed;
+    top: 0;
+    right:0;
+    left: 0;
+    bottom: 0;
+}
+
+.winner-display p:nth-child(1)
+{
+    color:rgb(122, 153, 153)
+}
+.winner-display p:nth-child(2){
+    color:  rgb(0, 174, 255);
+    font-weight: 800;
+}
+
+.user-selection .user-choice{
+    
+    background: rgb(178, 182, 185);
+    color: #04202b;
+    
+}
